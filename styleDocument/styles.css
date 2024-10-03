@@ -1,0 +1,206 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/** Header styling and navbar  **/
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: aquamarine;
+}
+
+/** main-section style **/
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.main-container {
+    width: 50%;
+}
+
+.main-section h1 {
+    font-size: 2.5rem;
+}
+
+.main-section p {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.main-section button {
+    padding: 8px 20px;
+    background-color: #0a83d4;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.placeholder {
+    width: 300px;
+    height: 200px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/** Information Section Styling **/
+.information-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.information-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.information-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    border: 5px solid #0f8de0;
+    background-color: #fff;
+}
+
+article {
+    max-width: 300px;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/** quote-section styling **/
+.quote-section {
+    background-color: #b8bdca;  /* Light grey background that fills the section */
+    padding: 30px 0;  /* Extra padding to fill space */
+    text-align: center;
+    width: 100%;  /* Ensures the background takes the entire width */
+}
+
+.quote-holder {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: left;  /* Aligns the text to the left inside the quote holder */
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 300;  /* Matches the thinner style in the image */
+
+}
+
+.quote-author {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    display: block;  /* Moves the author to the right */
+    margin-top: 20px;  /* Adds space between the quote and the author */
+}
+
+
+
+/** action-section style**/
+.actions-section {
+    background-color: #eceff1;  /* Blue background */
+    padding: 80px 0;  /* Increased padding for space */
+    text-align: center;
+}
+
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 40px;  /* Padding inside the container */
+    background-color: #3498db;
+    border-radius: 10px;  /* Slightly adjusted to 10px */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Deeper shadow for emphasis */
+}
+
+.action-text {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.action-button {
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 20px;  /* Adds spacing between text and button */
+}
+
+.action-button:hover {
+    background-color: white;
+    color: #3498db;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #a2c7e5, #d9e7f5);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#weather-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Weather Card Styles */
+.weather-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.temperature {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.weather-card p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color:#0a1884;
+}
+
