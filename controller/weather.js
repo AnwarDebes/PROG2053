@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const weatherContainer = document.getElementById('weather-container');
-    const updateInterval = 10 * 60 * 1000; // Update every 10 minutes
+    const updateInterval = 10 * 60 * 1000 ; // Update every 10 minutes
 
     // List of locations with their names and coordinates
     const locations = [

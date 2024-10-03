@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let postIndex = 0;  // Start index for fetching posts
     const postsPerLoad = 20; // Number of posts to load each time
+    const totalPosts = 100; // Total number of posts in the API
     let isLoading = false; // Flag to prevent multiple simultaneous loads
 
     // Function to load posts from the API and display them
@@ -13,9 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(posts => {
                 if (posts.length === 0) {
-                    // If no more posts are available, stop the event listener
-                    window.removeEventListener('scroll', onScroll);
-                    return;
+                    return; // If no more posts, do nothing
                 }
 
                 const postsContainer = document.getElementById('posts-container');
@@ -33,6 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Update the postIndex for the next load
                 postIndex += postsPerLoad;
+
+                // Reset the postIndex when it reaches the total number of posts
+                if (postIndex >= totalPosts) {
+                    postIndex = 0; // Reset to start from the first post again
+                }
+
                 isLoading = false; // Reset the loading flag
             })
             .catch(error => {
