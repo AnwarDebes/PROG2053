@@ -1,66 +1,69 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Set default font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text color */
+    padding: 20px; /* Add padding inside the header */
+    text-align: center; /* Center-align header text */
 }
 
 header nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
 }
 
 header nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+    display: inline-block; /* Display list items horizontally */
+    margin: 0 10px; /* Horizontal spacing between items */
 }
 
 header nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white; /* White link text color */
+    text-decoration: none; /* Remove underline from links */
 }
 
 #posts-container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    max-width: 1200px; /* Limit container width */
+    margin: 20px auto; /* Center container and add vertical margin */
+    padding: 10px; /* Add padding inside the container */
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Space items evenly */
 }
 
 .post-label {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
-    width: calc(30% - 40px); /* Adjust width for 3 per row, considering margins */
-    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 15px; /* Add padding inside the label */
+    margin: 10px; /* Add margin around the label */
+    border-radius: 8px; /* Round the corners */
+    border: 1px solid #ddd; /* Light grey border */
+    font-size: 1rem; /* Set font size */
+    width: calc(30% - 40px); /* Calculate width for three columns */
+    box-sizing: border-box; /* Include padding and border in width */
 }
 
+/* Responsive design for screens up to 800px wide */
 @media (max-width: 800px) {
     .post-label {
-        width: calc(45% - 40px); /* Adjust width for 2 per row on smaller screens */
+        width: calc(45% - 40px); /* Adjust width for two columns */
     }
 }
 
+/* Responsive design for screens up to 500px wide */
 @media (max-width: 500px) {
     .post-label {
-        width: calc(100% - 40px); /* Full width on very small screens */
+        width: calc(100% - 40px); /* Adjust width for one column */
     }
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    background-color: #333; /* Match header background color */
+    color: white; /* White text color */
+    text-align: center; /* Center-align footer text */
+    padding: 10px; /* Add padding inside the footer */
 }

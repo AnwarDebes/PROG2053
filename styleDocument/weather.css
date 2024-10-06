@@ -1,82 +1,80 @@
-/* General Styles */
+/* General styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #a2c7e5, #d9e7f5);
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set default font family */
+    background: linear-gradient(to bottom, #a2c7e5, #d9e7f5); /* Light blue gradient background */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 header, footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text color */
+    padding: 20px; /* Add padding inside header and footer */
+    text-align: center; /* Center-align text */
 }
 
 header nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
 }
 
 header nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+    display: inline-block; /* Display list items horizontally */
+    margin: 0 10px; /* Horizontal spacing between items */
 }
 
 header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    color: white; /* White link text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold link text */
 }
 
 #weather-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    max-width: 1200px; /* Limit container width */
+    margin: 40px auto; /* Center container and add vertical margin */
+    padding: 10px; /* Add padding inside the container */
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
 }
 
-/* Weather Card Styles */
+/* Weather card styles */
 .weather-card {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin: 15px;
-    border-radius: 15px;
-    border: 1px solid #ddd;
-    width: 250px;
-    box-sizing: border-box;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px; /* Add padding inside the card */
+    margin: 15px; /* Add margin around the card */
+    border-radius: 15px; /* Round the corners */
+    border: 1px solid #ddd; /* Light grey border */
+    width: 250px; /* Set fixed width */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 .weather-card h2 {
-    margin-top: 0;
-    font-size: 1.5em;
+    margin-top: 0; /* Remove top margin */
+    font-size: 1.5em; /* Increase font size */
 }
 
 .temperature {
-    font-size: 2em;
-    margin: 10px 0;
+    font-size: 2em; /* Larger font for temperature */
+    margin: 10px 0; /* Vertical spacing */
 }
 
 .weather-card p {
-    margin: 5px 0;
-    font-size: 1em;
+    margin: 5px 0; /* Vertical spacing */
+    font-size: 1em; /* Standard font size */
+}
+
+.weather-card:hover {
+    transform: translateY(-5px); /* Slightly move up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    color: #0a1884; /* Change text color on hover */
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    background-color: #333; /* Match header background color */
+    color: white; /* White text color */
+    text-align: center; /* Center-align footer text */
+    padding: 10px; /* Add padding inside the footer */
 }
-
-
-.weather-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    color:#0a1884;
-}
-

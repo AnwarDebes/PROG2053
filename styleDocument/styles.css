@@ -1,220 +1,224 @@
+/* General body styling */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-family: 'Roboto', sans-serif; /* Set the default font family to Roboto */
+    margin: 0; /* Remove default browser margin */
+    padding: 0; /* Remove default browser padding */
+    background-color: #f0f0f0; /* Apply a light grey background color */
+    max-width: 1200px; /* Set the maximum width of the body content */
+    margin: 0 auto; /* Center the body content horizontally */
 }
 
-/** Header styling and navbar  **/
+/** Header styling and navigation bar **/
 header {
-    background-color: rgb(33, 42, 56);
-    color: white;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    border-bottom:0.5px solid #877b7b;
+    background-color: rgb(33, 42, 56); /* Set a dark blue-grey background for the header */
+    color: white; /* Set the text color to white */
+    text-align: center; /* Center-align text within the header */
+    max-width: 1200px; /* Restrict header width to match body */
+    margin: 0 auto; /* Center the header horizontally */
+    padding: 20px; /* Add padding inside the header */
+    border-bottom: 0.5px solid #877b7b; /* Add a subtle bottom border */
 }
 
 header nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove default list styling (bullets) */
+    padding: 0; /* Remove default padding */
 }
 
 header nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline-block; /* Display list items horizontally */
+    margin: 0 15px; /* Add horizontal spacing between items */
 }
 
 header nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Set link text color to white */
+    text-decoration: none; /* Remove underline from links */
 }
 
 .navbar a:hover {
-    color: aquamarine;
+    color: aquamarine; /* Change link text color on hover */
 }
 
-/** main-section style **/
+/** Main section styling **/
 .main-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(33, 42, 56);
-    color: white;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Distribute space evenly between items */
+    align-items: center; /* Vertically center items */
+    background-color: rgb(33, 42, 56); /* Match header background color */
+    color: white; /* Set text color to white */
+    max-width: 1200px; /* Restrict section width */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 40px; /* Add padding inside the section */
 }
 
 .main-container {
-    margin-top: 40px;
-    margin: 80px;
-    margin-left:140px;
-
+    margin: 30px; /* Add margin on all sides */
+    margin-left: 140px; /* Increase left margin */
 }
 
 .main-section h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Increase font size for the main heading */
 }
 
 .main-section p {
-    max-width: 300px;
-    margin-bottom: 20px;
+    max-width: 300px; /* Limit paragraph width for readability */
+    margin-bottom: 20px; /* Add space below the paragraph */
 }
 
 .main-section button {
-    padding: 8px 20px;
-    background-color: #0a83d4;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
+    padding: 6px 20px; /* Add padding inside the button */
+    background-color: #1580c7; /* Set button background color */
+    color: white; /* Set button text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 8px; /* Round the button corners */
+    border: none; /* Remove default border */
 }
+
 
 .placeholder {
-    width: 800px;
-    height: 250px;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-right: 150px;
-    margin-top: 40px;
+    width: 600px; /* Set width of the placeholder */
+    height: 200px; /* Set height of the placeholder */
+    background-color: grey; /* Set background color */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* Set text color */
+    margin-right: 150px; /* Add right margin */
+    margin-top: 40px; /* Add top margin */
 }
 
-/** Information Section Styling **/
+/** Information section styling **/
 .information-section {
-    text-align: center;
-    padding: 40px;
-    background-color: #f8f9fa;
+    text-align: center; /* Center-align text */
+    padding: 30px; /* Add padding inside the section */
+    background-color: #f8f9fa; /* Light background color */
 }
 
 .information-section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #2c3e50;
+    font-size: 2rem; /* Increase font size for the heading */
+    margin-bottom: 50px; /* Add space below the heading */
+    margin-top: 1px;
+    color: #2c3e50; /* Darker text color for contrast */
 }
 
 .information-box {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 40px;
-
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Add space between items */
+    margin-bottom: 60px; /* Add space below each box */
 }
 
 .box {
-    width: 200px;
-    height: 100px;
-    border: 5px solid #2484c4;
-    border-radius:10px;
-    background-color: #fff;
+    width: 250px; /* Set width of the box */
+    height: 130px; /* Set height of the box */
+    border: 5px solid #2484c4; /* Add border with color */
+    border-radius: 10px; /* Round the corners */
+    background-color: #fff; /* White background inside the box */
 }
 
 article {
-    max-width: 300px;
-    text-align: left;
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
+    max-width: 300px; /* Limit width for readability */
+    text-align: left; /* Align text to the left */
+    font-size: 0.8rem; /* Set font size */
+    color: #333; /* Dark grey text color */
+    line-height: 1.6; /* Increase line height for readability */
+    font-size:13px;
+    justify-content: space-between;
 }
 
-/** quote-section styling **/
+/** Quote section styling **/
 .quote-section {
     background-color: #d7dbe4;  /* Light grey background */
-    padding: 30px 0;  /* Extra padding to fill space */
-    text-align: center;
-    width: 100%;  /* Full width background */
+    padding: 30px 0;  /* Add vertical padding */
+    text-align: center; /* Center-align text */
+    width: 100%;  /* Full-width background */
 }
 
 .quote-holder {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 30px;
-    text-align: left;  /* Align text to left inside holder */
+    max-width: 900px; /* Limit width of the quote container */
+    margin: 0 auto; /* Center the container */
+    padding: 30px; /* Add padding inside the container */
+    text-align: left;  /* Align text to the left */
 }
 
 .quote {
-    font-size: 22px;
-    font-style: italic;
-    font-weight: 300;  /* Thinner font weight */
-    color: rgb(68, 65, 65);
-    line-height: 1.6;
-    max-width: 600px;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(57, 56, 56, 0.2);  /* Subtle text shadow */
-    margin-left: 150px;
-    margin-top:50px;
+    font-size: 22px; /* Increase font size for emphasis */
+    font-style: italic; /* Italicize the text */
+    font-weight: 300;  /* Light font weight */
+    color: rgb(68, 65, 65); /* Dark grey text color */
+    line-height: 1.6; /* Increase line height */
+    max-width: 600px; /* Limit width of the quote */
+    margin-bottom: 30px; /* Add space below the quote */
+    text-shadow: 1px 1px 2px rgba(57, 56, 56, 0.2);  /* Add subtle text shadow */
+    margin-left: 150px; /* Add left margin */
+    margin-top: 50px; /* Add top margin */
+    font-weight: bold; /* Bold text */
+    line-height: 1.2; /* Decrease line height */
 }
 
 .quote-author {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #050505;
-    text-align: right;  /* Aligns to the right */
-    margin-right: 260px;  /* Adjusts spacing from the right */
-    margin-bottom: 40px;
-    margin-top: -10px;  /* Slightly pulls the author closer to the quote */
-    display: block;
+    font-size: 1.2em; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    color: #050505; /* Very dark text color */
+    text-align: right;  /* Align text to the right */
+    margin-right: 260px;  /* Add right margin */
+    margin-bottom: 40px; /* Add space below the author name */
+    margin-top: -10px;  /* Adjust top margin to overlap slightly */
+    display: block; /* Ensure the element occupies full width */
 }
 
-
-/** action-section style**/
+/** Actions section styling **/
 .actions-section {
-    background-color: #eceff1;  /* Blue background */
-    padding: 80px 0;  /* Increased padding for space */
-    width: 80%;
-    height: fit-content;
-    margin: 0 auto;
-    
+    background-color: #eceff1;  /* Light blue-grey background */
+    padding: 80px 0;  /* Add vertical padding */
+    width: 80%; /* Set width to 80% of the parent */
+    height: fit-content; /* Adjust height to content */
+    margin: 0 auto; /* Center the section */
 }
 
 .actions-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px 40px;  /* Padding inside the container */
-    background-color: #0d7fcb;
-    border-radius: 10px;  /* Slightly adjusted to 10px */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Deeper shadow for emphasis */
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Center items vertically */
+    max-width: 800px; /* Limit container width */
+    height: 4vh; /* Set height of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px 40px;  /* Add padding */
+    background-color: #0d7fcb; /* Set background color */
+    border-radius: 10px;  /* Round the corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Add shadow effect */
 }
 
 .action-text {
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.5;
+    color: white; /* White text color */
+    font-size: 1rem; /* Standard font size */
+    font-weight: bold; /* Bold text */
+    margin: 0; /* Remove default margin */
+    line-height: 1.5; /* Increase line height */
+    margin-left: 30px; /* Add left margin */
 }
 
-
 .action-button {
-    padding: 10px 25px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-left: 20px;  /* Adds spacing between text and button */
+    padding: 10px 25px; /* Add padding inside the button */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White border */
+    color: white; /* White text color */
+    border-radius: 5px; /* Round the button corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    margin-left: 20px;  /* Space between text and button */
+    margin-right: 120px; /* Add right margin */
 }
 
 .action-button:hover {
-    background-color: white;
-    color: #3498db;
+    background-color: white; /* White background on hover */
+    color: #3498db; /* Blue text color on hover */
 }
 
-/* Footer Styling */
+/* Footer styling */
 footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background-color: #2c3e50; /* Dark blue-grey background */
+    color: white; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding inside the footer */
 }
