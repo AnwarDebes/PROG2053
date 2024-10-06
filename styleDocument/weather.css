@@ -1,7 +1,7 @@
 /* General styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set default font family */
-    background: linear-gradient(to bottom, #a2c7e5, #d9e7f5); /* Light blue gradient background */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /* Set default font family */
+    background: linear-gradient(bottom, #a2c7e5, #d9e7f5); /* Light blue gradient background */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
